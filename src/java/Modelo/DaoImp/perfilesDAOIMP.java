@@ -29,7 +29,7 @@ public class perfilesDAOIMP implements perfilesDAO{
     public boolean agregarRegistro(perfilesDTO perfil) {
         try {
             conexion.Transaccion(Conexion.TR.INICIAR);
-            sql = "INSERT INTO public.perfiles(descripcion, comentario) VALUES (?, ?);";
+            sql = "INSERT INTO public.pperfiles(descripcion, comentario) VALUES (?, ?);";
             ps = conexion.obtenerConexion().prepareStatement(sql);
             ps.setString(1, perfil.getDescripcion());
             ps.setString(2, perfil.getComentario());

@@ -20,7 +20,7 @@ public class TokenDAOIMP implements TokenDAO {
     @Override
     public boolean verificarToken(String token) {
         try {
-            query = "SELECT id FROM public.usuarios_rest WHERE token = ? ;";
+            query = "SELECT id FROMM public.usuarios_rest WHERE token = ? ;";
             ps = conexion.obtenerConexion().prepareStatement(query);
             ps.setString(1, token);
             rs = ps.executeQuery();

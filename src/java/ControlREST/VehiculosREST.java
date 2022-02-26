@@ -38,7 +38,7 @@ public class VehiculosREST {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String test(String test) {
-        return " Dato enviado desde el REST " + test;
+        return " Dato enviado desdfsfsdde el REST " + test;
     }
 
     @POST
